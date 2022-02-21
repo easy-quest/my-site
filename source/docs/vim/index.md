@@ -6,153 +6,153 @@ description: Vim Snippets
 ---
 # Vim  
 
-## Open vim
+## Открыть vim
 
 ```bash
 vim FILENAME
 ```
 
-## Write current file, if modified, and exit
+## Запись текущего файла, если он  изменен и выход из него
 ```bash
 ZZ
 ```
 
-## Delete
+## Удалить
 
-### Delete a whole line
+### Удаление всей строки
 ```bash
 dd 
 ```
 
-### Delete a character
+### Удаление символа
 ```bash
  x
 ```
 
-## Moving the Cursor
+## Перемещение курсора
 
-### Move down
+### Перемещение вниз
 ```bash
 j    
 ```
 
-### Move up
+### Перемещение вверх
 ```bash
 k
 ```
 
-### Move left
+### Перемещение влево
 ```bash
 h
 ```
 
-### Move right
+### Перемещение вправо
 ```bash
 l
 ```
 
-> Note: Like many vim commands, above movements can be prefixed by a number to move several lines at a time.
+> Заметка: Как и многие команды vim, вышеуказанные движения могут быть дополнены числом для перемещения нескольких строк одновременно.
 ```bash
-4j # move 4 rows down
-6k # move 6 rows up
+4j # перемещение на 4 строки вниз
+6k # перемещение на 6 рядов вверх
 ```
 
 
-### Move to top of the document
+### Перемещение в начало документа
 ```bash
 gg
 ```
 
-### Move to vertically centre line of visible document
+### Перемещение к вертикальной центральной линии видимого документа
 ```bash
 M
 ```
 
-### Move to bottom of the document
+### Перемещение в нижнюю часть документа
 ```bash
 G
 ```
 
-### Move to the beginning of the line
+### Перемещение в начало строки
 ```bash
 0
 ```
 
-### Move to the end of the line
+### Перемещение в конец строки
 ```bash
 $
 ```
 
-## Basic word movements
+## Основные движения по тексту
 
-### Move to beginning of next word
+### Переход к началу следующего слова
 ```bash
 w
 ```
 
-### Move to beginning of next word after a whitespace
+### Переход к началу следующего слова после пробела
 ```bash
 W
 ```
 
-### Move to previous beginning of word
+### Переход к предыдущему началу слова
 ```bash
 b
 ```
 
-### Move to beginning of previous word before a whitespace
+### Переход к началу предыдущего слова перед пробелом
 ```bash
 B
 ```
 
-### Move to end of word
+### Перемещение в конец слова
 ```bash
 e
 ```
 
-### Move to end of word before a whitespace
+### Перемещение в конец слова перед пробелом
 ```bash
 E
 ```
 
-## Text Insertion
+## Вставка текста
 
-Vim is a 'modal' editor. This means you will cycle in between several different editing modes. It makes Vim extremely efficient once you get the hang of it. You'll normally find yourself between 'edit' and 'insert' modes.
+Vim является 'модальным' редактором. Это означает, что вы будете переключаться между несколькими различными режимами редактирования. Это делает Vim чрезвычайно эффективным, как только вы освоите его. Обычно вы оказываетесь между режимами 'редактировать' и 'вставлять'.
 
-`esc` will place you into normal mode.
-`i` will place you into insert mode.
+`esc` переведет вас в нормальный режим.
+`i` переведет вас в режим вставки.
 
-There are also a few more advance methods that come in handy.
+Есть также несколько более продвинутых методов, которые пригодятся.
 
-`o` will move you down a line and place you into insert mode. This is useful when you find somewhere in the file you would like to start adding to.
-`shift-a` will open up insert mode at the END of a line.
+`o` переместит вас вниз по строке и переведет в режим вставки. Это полезно, когда вы найдете где-то в файле, в который вы хотели бы начать добавлять.
+`shift-a` откроет режим вставки в конце строки.
 
-## Text Selection
-There are two modes to select lines of code in vim. You can switch to them from normal mode.
+## Выделение текста
+Существует два режима выбора строк кода в vim. Вы можете переключиться на них из обычного режима.
 
 ### Visual Mode:
-`v` will switch vim to visual mode (`-- VISUAL --` is displayed at bottom).
+`v` переключит vim в визуальный режим (`-- VISUAL --` отображается внизу).
 
-While in this mode, using any movement keys `hjkl`, selects the lines just like as clicking and selecting the code as in any editor.
+Находясь в этом режиме, используя любые клавиши движения `hjkl`, выделяет строки так же, как при щелчке и выделении кода, как в любом редакторе.
 
 ### Visual Line Mode:
-`V` will switch vim to visual lines mode (`-- VISUAL LINE --` is displayed at bottom).
+`V` переключит vim в режим визуальных линий (`-- VISUAL LINE --` отображается внизу).
 
-When moving cursor around in this mode, no matter where your cursor is in that line the full line will be selected.
+При перемещении курсора в этом режиме, независимо от того, где ваш курсор находится в этой строке, будет выбрана полная строка.
 
 ## Copy/Paste
 
 ```bash
-yy # copies/yanks the current line
-p # pastes the line
+yy # copies/yanks текущая строка
+p # вставляет строку
 ```
 
 ## Macros
 
-Vim has a powerful macro system, but there is also a very easy way to get started.
+Vim имеет мощную макросистему, но есть и очень простой способ начать работу.
 
-1. Hit `esc` and then hit `i` to enter insert mode. As soon as you do this, your actions are being recorded. Type a word such as 'test'
-2. Now hit `esc` again. You have ended the recording.
-3. Press the `.` key. You'll notice that Vim prints out 'test'. Press the `.` key as many times as you like and it will repeat the same action.
+1. Ударить `esc` а затем нажмите `i` , чтобы войти в режим вставки. Как только вы это сделаете, ваши действия будут записаны. Введите слово, например 'test'
+2. Теперь хит `esc` снова. Вы закончили запись.
+3. Нажмите кнопку `.` . Вы заметите, что Vim распечатывает 'test'. Нажмите кнопку `.` столько раз, сколько вам нравится, и он будет повторять одно и то же действие.
 
-This simple action can be used to duplicate anything you want in Vim. The sky is the limit.
+Это простое действие можно использовать для дублирования всего, что вы хотите в Vim. Небо – это предел.
