@@ -5,20 +5,20 @@ extends: _layouts.documentation
 section: content
 ---
 
-# Hey 👋, welcome to Dev Snippets!
+# Привет 👋, добро пожаловать в Dev Snippets!
 
-Dev Snippets is (or intends to be) a collection of useful code snippets for new developers. 
+Dev Snippets — это (или намеревается быть) коллекция полезных фрагментов кода для новых разработчиков. 
 
-Initially this started as a little personal project, just somewhere for me to save those little snippets of code, that I need every so often but that I can never remember. 
+Первоначально это начиналось как небольшой личный проект, просто где-то для меня, чтобы сохранить те маленькие фрагменты кода, которые мне нужны время от времени, но которые я никогда не могу вспомнить. 
 
-Unfortunately, like most side projects, I've not really had time to get it going. However, with [Hacktoberfest](https://hacktoberfest.digitalocean.com/) looming, I thought why not resurrect it, opening it up for others to contribute to, helping people make their first open source contribution's, whilst building an awesome set of snippets for us all to use!  
+К сожалению, как и у большинства сайд-проектов, у меня не было времени, чтобы начать работу. Тем не менее, с  [Hacktoberfest](https://hacktoberfest.digitalocean.com/) Я подумал, почему бы не воскресить его, открыв его для других, чтобы внести свой вклад, помогая людям сделать свой первый вклад с открытым исходным кодом, создавая при этом потрясающий набор фрагментов для всех нас!  
 
-### Contributing 
+### Способствует 
 
-There are no hard and fast rules here, so please feel free to [contribute](https://github.com/rickwest/devsnippets) by opening a pull request adding your snippet. This isn't a new idea so check out projects like [DevHints](https://devhints.io/) for inspiration. 
+Здесь нет жестких и быстрых правил, поэтому, пожалуйста, не стесняйтесь [способствовать](https://github.com/rickwest/devsnippets) открыв запрос на извлечение, добавив фрагмент. Это не новая идея, поэтому ознакомьтесь с такими проектами, как [DevHints](https://devhints.io/) для вдохновения. 
 
-...And if you're still not sure, or you need some help, just [open an issue](https://github.com/rickwest/devsnippets/issues/new) or drop me a message [@rick_west8](https://twitter.com/rick_west8) and I'll do my best to guide you through it! 
+...И если вы все еще не уверены, или вам нужна помощь, просто [открыть выпуск](https://github.com/rickwest/devsnippets/issues/new) или отправьте мне сообщение [@rick_west8](https://twitter.com/rick_west8) и я сделаю все возможное, чтобы провести вас через это! 
 
 ---
 
-*That pain when you spend hours searching for an answer on Stack Overflow, strike gold, but then accidentally close the window and struggle to find it again.* 😩
+*Эта боль, когда вы тратите часы на поиск ответа на Stack Overflow, наносите удар по золоту, но затем случайно закрываете окно и изо всех сил пытаетесь найти его снова.* 😩
