@@ -10,5 +10,6 @@ dev:
 	./vendor/bin/jigsaw serve
 gp:
 	git add .
-	git commit -am "$texxt"
+	direnv allow
+	git commit -am "${texxt}"
 	git push
