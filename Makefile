@@ -9,7 +9,6 @@ dev:
 	./vendor/bin/jigsaw build
 	./vendor/bin/jigsaw serve
 gp:
-	texxt=`(uname --operating-system;date)`
 	git add .
 	git commit -am "$texxt"
 	git push
